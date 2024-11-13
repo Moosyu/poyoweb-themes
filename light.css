@@ -1,0 +1,181 @@
+/* ==UserStyle==
+@name           poyoweb.me
+@namespace      github.com/Moosyu/poyoweb-themes
+@version        1.0.0
+@description    gooder light theme
+@author         moosyu
+==/UserStyle== */
+@-moz-document url-prefix("https://poyoweb.me/") {
+    :root {
+        --primary: initial;
+        --secondary: initial;
+        --tertiary: initial;
+        --cloudblue: initial;
+        --skyblue: initial;
+        --iceblue: initial;
+        --lightblue: initial;
+        --babyblue: initial;
+        --seafoam: initial;
+        --softblue: initial;
+        --aqua: initial;
+        --frost: initial;
+        --ocean: initial;
+        --linkblue: initial;
+        --deepblue: initial;
+        --mintblue: initial;
+        --cloudgray: initial;
+        --stormblue: initial;
+        --midnightblue: initial;
+        --slateblue: initial;
+        --mistgray: initial;
+        --cobalt: initial;
+        --brightteal: initial;
+        --warning: initial;
+        --gradientblue: none;
+        --input-background: initial;
+        --input-border: initial;
+        --input-shadow: none;
+        --input-text-color: initial;
+    }
+
+    * {
+        box-sizing: border-box;
+        font-family: monospace;
+    }
+
+    body {
+        padding: 0;
+        margin: 2vh 10vw 0 10vw;
+        background-image: url("https://raw.githubusercontent.com/Moosyu/poyoweb-themes/refs/heads/main/clouds.png");
+    }
+    .megacontainer {
+        position: relative;
+        min-height: 100%;
+        gap: 5px;
+        background: none;
+        background-color: white;
+        outline: initial;
+        border: 1px black solid;
+    }
+
+    .container {
+        padding: 2vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container > *:first-child {
+        margin: 0;
+    }
+
+    .row-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .header-container {
+        position: relative;
+        background-color: initial;
+    }
+
+    .footer-container {
+        border-top: initial;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: none;
+        color: initial;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 25vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .link-container {
+        position: relative;
+        background-color: initial;
+        flex-direction: column;
+        gap: 10px;
+        text-align:center;
+    }
+    
+    .main-container::before {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 100%;
+        background-image: none;
+        top: 0;
+        left: 0;
+    }
+    
+    .main-container {
+        border-top: initial;
+        width: 100%;
+        position: relative;
+        padding-left: 25px;
+    }
+    
+    .main-container > *:first-child {
+        margin: 0;
+    }
+
+    .message-container {
+        background-color: initial;
+        width: 100%;
+        padding: 1vh;
+        margin-top: 1vh;
+    }
+
+    button,
+    input[type="submit"] {
+        font-weight: initial;
+        color: black;
+        border: 1px black solid; 
+        border-radius: initial;
+        background-color: #e7e7e7;
+        box-shadow: none;
+        text-shadow: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .link-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 150px;
+    }
+
+    button:hover,
+    input[type="submit"] {
+        background: initial;
+    }
+
+    button:active,
+    input[type="submit"] {
+        box-shadow: none;
+    }
+
+    form {
+        gap: initial;
+    }
+    input {
+        padding: 5px 10px;
+        font-size: 16px;
+        color: initial;
+        background-color: initial;
+        border: initial;
+        border-radius: initial;
+        box-shadow: none;
+        transition: none;
+    }
+
+    input:focus {
+        outline: none;
+        background-color: initial;
+        box-shadow: none;
+    }
+}
